@@ -50,6 +50,25 @@ public class app {
         int precio2=ensrv.precioEnvio(enc);
         System.out.println("el precio de envio es $"+precio2);
 
+        // probar funcion validacion de encomienda
+        Encomienda enc1=new Encomienda("santiago",2,3,4);
+        if(ensrv.validar(enc1)) {
+            System.out.println("la encomienda 1 es valida");
+        }
+        Encomienda enc2=new Encomienda("santiago",-2,3,4);
+        if(ensrv.validar(enc2)) {
+            System.out.println("la encomienda 2 es valida");
+        } else {
+            System.out.println("la encomienda 2 no es valida");
+        }
+
+        // mostrar encomienda
+        Encomienda enc3=new Encomienda("santiago","arica",3,4,5);
+        enc3.rutCliente="1111111-1";
+        enc3.telefonoContacto="555-22333";
+
+        ensrv.mostrar(enc3.destinatario,enc3.origen,enc3.alto,enc3.ancho,enc3.largo);
+        ensrv.mostrar(enc3);
 
     } // fin de funcion main
 } // fin de la clase

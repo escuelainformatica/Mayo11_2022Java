@@ -2,6 +2,9 @@ package modelo;
 
 public class Encomienda {
     public String destinatario;
+    public String origen;
+    public String rutCliente;
+    public String telefonoContacto;
     public int alto;
     public int ancho;
     public int largo;
@@ -19,5 +22,13 @@ public class Encomienda {
         this.ancho=ancho;
         this.largo=largo;
     }
+    public Encomienda(String destinatario,String origen,int alto,int ancho,int largo) {
+        this.destinatario=destinatario;
+        this.origen=origen;
+        this.alto=alto;
+        this.ancho=ancho;
+        this.largo=largo;
+    }
+
 
 }
