@@ -6,8 +6,8 @@
 * 2) Opcionalmente, la clase de servicio se crea en una carpeta que indique su tipo, ejemplo, en la carpeta servicio.
 * 3) Opcionalmente, la clase de servicio, tiene un prefijo.
 
-📁 servicio
-....📃 EncomiendaServicio.java
+📁 servicio   
+....📃 EncomiendaServicio.java  
 
 * 4) Cuando creo la funcion, debo saber que valores necesito de entrada, y que valores voy a regresar.
 
